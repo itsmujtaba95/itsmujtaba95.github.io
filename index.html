@@ -18,6 +18,24 @@
             background: #f4f4f4;
         }
 
+        /* Background Image - Blurred and Faint */
+        body::before {
+            content: '';
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-image: url('https://itsmujtab95.github.io/background.jpg');
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            filter: blur(8px);
+            opacity: 0.15;
+            z-index: -1;
+        }
+
         /* Navigation */
         nav {
             background: #2c3e50;
@@ -160,37 +178,46 @@
             margin-bottom: 1rem;
         }
 
-        /* Projects Section */
-        .projects-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-            gap: 2rem;
-            margin-top: 2rem;
-        }
-
-        .project-card {
-            background: #f8f9fa;
-            padding: 2rem;
-            border-radius: 10px;
-            border-left: 4px solid #667eea;
-            transition: transform 0.3s, box-shadow 0.3s;
-        }
-
-        .project-card:hover {
-            transform: translateY(-5px);
-            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
-        }
-
-        .project-card h3 {
-            color: #2c3e50;
-            margin-bottom: 1rem;
-        }
-
-        .project-card p {
-            color: #666;
-            line-height: 1.8;
-        }
-
+    <!-- Projects Section -->
+    <section id="projects">
+        <div class="container">
+            <h2>Projects & Experience</h2>
+            <div class="projects-grid">
+                <div class="project-card">
+                    <img src="https://itsmujtab95.github.io/Project1.jpg" alt="Project 1">
+                    <div class="project-card-content">
+                        <h3>Project Name 1</h3>
+                        <p>
+                            Brief description of your project. What technologies did you use? 
+                            What problem did it solve? What did you learn?
+                        </p>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <img src="https://itsmujtab95.github.io/Project2.jpg" alt="Project 2">
+                    <div class="project-card-content">
+                        <h3>Project Name 2</h3>
+                        <p>
+                            Brief description of your project. What technologies did you use? 
+                            What problem did it solve? What did you learn?
+                        </p>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <img src="https://itsmujtab95.github.io/Project3.jpg" alt="Project 3">
+                    <div class="project-card-content">
+                        <h3>Project Name 3</h3>
+                        <p>
+                            Brief description of your project. What technologies did you use? 
+                            What problem did it solve? What did you learn?
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+        
+        
         /* Contact Section */
         .contact-info {
             text-align: center;
@@ -374,3 +401,4 @@
     </footer>
 </body>
 </html>
+
